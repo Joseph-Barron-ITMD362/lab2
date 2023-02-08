@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab 4 - Volunteer Form</title>
+</head>
+<body>
+  <h1>Volunteer Form</h1>
+  <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post" autocomplete="on">
+    <fieldset>
+      <legend>My Info</legend>
+      <div>
+        <label>First Name: <input type="text" name="first_name_field" placeholder="First Name" required></label>
+      </div>
+      <div>
+        <label>Last Name: <input type="text" name="last_name_field" placeholder="Last Name" required></label>
+      </div>
+      <div>
+        <label>Phone Number <input type="text" name="phone_field" placeholder="XXX-XXX-XXXX" required></label>
+      </div>
+      <div>
+        <label>Email Address: <input type="text" name="email_field" placeholder="example@domain.com" required></label>
+      </div>
+      <div>
+        <label>Gender: </label> 
+      </div>
+      <div>
+        <input type="radio" name="gender_field" value="male"> Male<br>
+        <input type="radio" name="gender_field" value="female"> Female<br>
+        <input type="radio" name="gender_field" value="other"> Other <br>
+      </div>
+	  <div>
+        <label for="birthday">DOB:</label>
+        <input type="date" id="DOB" name="dob">
+      </div>
+    </fieldset>
+    <br>
+    <div>
+      <input type="hidden" name="hidden_field" value="Joseph Barron">
+    </div>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
